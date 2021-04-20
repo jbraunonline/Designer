@@ -1,0 +1,14 @@
+﻿Backup the OL_Progress table before running the page listed below.
+use VC_VCData1
+DROP TABLE OL_Progress_BU;
+
+use VC_VCData1
+Select *
+into dbo.OL_Progress_BU
+from dbo.OL_Progress;
+
+
+Then In RADdesigner project
+run file AddProgressData
+in Administrator>>StartNewTerm>>AddProgressData.aspx
+this creats new records for progress (change term in code) with all records set to 0

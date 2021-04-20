@@ -1,0 +1,52 @@
+﻿For OL_BuildingBlocks ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+dbo.OL_BBlock_Data  scripts updated fro 2213'
+
+
+1. Drop OL_BBlock_Data_BU & OL_BBlock_DataTemp----------------------------
+DROP TABLE dbo.OL_BBlock_Data_BU;
+DROP TABLE dbo.OL_BBlock_DataTemp;
+
+2. make a BU-----------------------------------------
+
+select *
+into dbo.OL_BBlock_Data_BU
+from dbo.OL_BBlock_Data
+
+3. Create a OL_BBlock_DataTemp with only last term's records----------------
+Select *
+into dbo.OL_BBlock_DataTemp
+from dbo.OL_BBlock_Data
+where Term='2207'
+
+Combine 2&3
+
+use VC_VCData
+select *
+into dbo.OL_BBlock_Data_BU
+from dbo.OL_BBlock_Data;
+
+Select *
+into dbo.OL_BBlock_DataTemp
+from dbo.OL_BBlock_Data
+where Term='2207' ;
+
+
+4. Change term to correct term------------------------
+UPDATE dbo.OL_BBlock_DataTemp
+Set Term='2213'
+//////////////////////////////
+Update MasterName
+
+5. UPDATE dbo.OL_BBlock_DataTemp
+UPDATE dbo.OL_BBlock_DataTemp
+SET    MasterName = replace(MasterName, '2207_', '2213_')
+
+6. Drop the ID field from OL_BBlock_DataTemp--------------------------------
+
+ALTER TABLE dbo.OL_BBlock_DataTemp
+DROP COLUMN BBData_ID; 
+
+7 Copy OL_BBlock_DataTemp- to OL_BBlock_Data ------------------------------------
+
+INSERT INTO dbo.OL_BBlock_Data
+SELECT * FROM dbo.OL_BBlock_DataTemp

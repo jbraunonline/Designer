@@ -1,0 +1,44 @@
+﻿to set the timer, both the scripts.js file needs to be changed
+it is currently set to 30 min (3600 Seconds)
+The page.aspx.vb files also need to be changed to set a 60 minute sessoon timeout.
+for the timer to work properly, the scripts.js file (in Timeout folder) timeout in seconds must be set 
+equal to the number of minutes in the .aspx.vb rile; 3600 seconds in scripts and60 min in vb session time
+
+
+Tht timer is on
+the designer.aspx page
+designer/reviewauditForm.aspx
+the associate.aspx page
+
+To use on pages based on masterpage
+In 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <link href="/Timeout/styles.css" rel="stylesheet" type="text/css" />
+</asp:Content>
+
+and in the page, add the radnotification entry at bottom of page (note path to css above and scripts below)
+to add to another page, best to copy the notification from this page and paste it at bottom of next to preserve the template
+
+   <telerik:RadNotification RenderMode="Lightweight" ID="RadNotification1" runat="server" Position="Center" Width="370"
+        Height="210" OnCallbackUpdate="OnCallbackUpdate" LoadContentOn="PageLoad" AutoCloseDelay="60000"
+        OnClientShowing="notification_showing" OnClientHidden="notification_hidden"
+        Title="Continue Your Session" Skin="Office2007" EnableRoundedCorners="true"
+        ShowCloseButton="false" KeepOnMouseOver="false" CssClass="timeoutNotification" Animation="Fade" ShowSound="/Timeout/tada.wav" BackColor="Red">
+        <ContentTemplate>
+            <div class="infoIcon">
+                <img src="images/infoIcon.jpg" alt="info icon" /></div>
+            <div class="notificationContent">
+                Time remaining:&nbsp; <span id="timeLbl">60</span>
+                <telerik:RadButton RenderMode="Lightweight" Skin="Office2007" ID="continueSession" runat="server" Text="Continue Your Session" Width="190px"
+                    Style="margin-top: 10px;" AutoPostBack="false" OnClientClicked="ContinueSession">
+                </telerik:RadButton>
+            </div>
+        </ContentTemplate>
+    </telerik:RadNotification>
+    <script type="text/javascript" src="/Timeout/scripts.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        serverIDs({ notificationID: '<%= RadNotification1.ClientID %>' });
+        //]]>
+    </script>

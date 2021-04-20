@@ -1,0 +1,271 @@
+ACG2001,1,120,0,0,0,0,,1,1,1,0,,Final Exam (local),Final Exam (remote),15
+ACG2001L,0,0,0,0,0,0,,0,0,0,0,,,,0
+ACG2011,1,120,0,0,0,0,,1,1,1,0,,Final Exam (Local),Final Exam (Remote),15
+ACG2011L,0,0,0,0,0,0,,0,0,0,0,,,,0
+ACG2021,1,120,0,0,0,0,,1,1,1,1,,Final Exam (local),Final Exam (remote),15
+ACG2021L,0,0,0,0,0,0,,0,0,0,0,,,,0
+ACG2031,0,0,0,0,0,0,,0,0,0,0,,,,0
+ACG2071,1,120,1,0,0,0,,1,1,1,1,Open PDF,Final Exam (all modules) (local),Final Exam (all modules) (remote),15
+ACG2071L,0,0,0,0,0,0,,0,0,0,0,,,,0
+ACG2450,1,120,0,0,0,0,,0,1,1,0,,Proctored Final (Local),Proctored Final (Remote),24
+AMH2010,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (Local),Proctored Final (Remote),20
+AMH2020,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (Local),Proctored Final (Remote),10
+ARC2201,0,0,0,0,0,0,,0,0,0,0,,,,0
+ARC2461,0,0,0,0,0,0,,0,0,0,0,,,,0
+ARC2701,1,60,1,0,0,1,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),25
+ARC2702,0,0,0,0,0,0,,0,0,0,0,,,,0
+ARH1000,1,120,1,0,0,1,,1,1,0,0,,Final Exam (Local),Final Exam (Remote),0
+AVM2515,0,0,0,0,0,0,,0,0,0,0,,,,0
+BAN1004,0,0,0,0,0,0,,0,0,0,0,,,,0
+BCNXXXX,0,0,0,0,0,0,,0,0,0,0,,,,0
+BSC1005,1,120,0,0,0,0,,0,0,0,0,,Proctored Final Examination (local),Proctored Final Examination (remote),30
+BSC1050,1,100,0,0,0,0,,0,0,0,0,,Final_Units5_6 (Local),Final_Units5_6 (Remote),0
+BSC2010,1,120,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),30
+BSC2085,1,120,0,0,0,0,,0,0,0,0,,Final Exam (local),Final Exam (remote ),25
+BSC2085L,1,120,0,0,0,0,,0,0,0,0,,Final Exam (local),Final Exam (remote),26
+BSC2086,1,120,0,0,0,0,,0,0,0,0,,Final Exam (local),Final Exam (remote),25
+BSC2086L,1,120,1,1,0,0,,0,0,0,0,,Final Exam (local),Final Exam (remote),26
+BUL2241,0,0,0,0,0,0,,0,0,0,0,,,,0
+BUL4461,1,120,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),NA
+CCJ1010,1,90,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),15
+CCJ1020,1,120,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),20
+CCJ1191,1,120,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),20
+CCJ2650,0,0,0,0,0,0,,0,0,0,0,,,,0
+CCJ3032,1,120,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),20
+CCJ3663,0,0,0,0,0,0,,0,0,0,0,,,,0
+CCJ3666,0,0,0,0,0,0,,0,0,0,0,,,,0
+CCJ3700,0,0,0,0,0,0,,0,0,0,0,,,,0
+CCJ4054,1,120,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored  Final Exam (Remote),20
+CCJ4450,1,120,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),20
+CCJ4651,0,0,0,0,0,0,,0,0,0,0,,,,0
+CCJ4660,0,0,0,0,0,0,,0,0,0,0,,,,0
+CGS1060,1,60,0,0,0,0,,0,0,0,0,,Final Proctored Exam (Local),Final Proctored Exam (Remote),0
+CGS1060C,1,60,0,0,0,0,,0,0,0,0,,Final Proctored Exam (Local),Final Proctored Exam (Remote),10
+CGS1540,0,0,0,0,0,0,,0,0,0,0,,,,0
+CGS1540C,0,0,0,0,0,0,,0,0,0,0,,,,0
+CGS1541,0,0,0,0,0,0,,0,0,0,0,,,,0
+CGS1560,1,90,0,0,0,0,,0,0,0,0,,Proctored Final (Local),Proctored Final (Remote),15
+CGS2091,1,75,0,0,0,0,,0,0,0,0,,Proctored Final (Local),Proctored Final (Remote),10
+CGS2108,1,90,0,0,0,0,,0,0,0,0,,,,20
+CGS3763,0,0,0,0,0,0,,0,0,0,0,,,,0
+CHM1033,0,0,0,0,0,0,,0,0,0,0,,,,0
+CHM1033L,0,0,0,0,0,0,,0,0,0,0,,,,0
+CIS1321,1,90,0,0,0,0,,0,0,0,0,,Final Proctored Exam (Local),Final Proctored Exam (Remote),20
+CIS2322,1,90,1,0,0,1,,0,0,0,0,,Final Proctored Exam (Local),Final Proctored Exam (Remote),25
+CIS3360,1,90,1,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),25
+CIS3510,1,90,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),15
+CIS4347,0,0,0,0,0,0,,0,0,0,0,,,,0
+CIS4617,0,0,0,0,0,0,,0,0,0,0,,,,0
+CIS4891,0,0,0,0,0,0,,0,0,0,0,,,,0
+CJC1000,0,0,0,0,0,0,,0,0,0,0,,,,25
+CJC1162,0,0,0,0,0,0,,0,0,0,0,,,,0
+CJC4311,1,90,0,0,0,0,,1,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),25
+CJE1640,0,0,0,0,0,0,,0,0,0,0,,,,0
+CJE1680,0,0,0,0,0,0,,0,0,0,0,,,,0
+CJE2600,1,90,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),20
+CJE3115,1,75,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),15
+CJE3574,0,0,0,0,0,0,,0,0,0,0,,,,0
+CJE4615,0,0,0,0,0,0,,0,0,0,0,,,,0
+CJJ2002,1,60,0,0,0,0,,0,0,0,0,,Proctored Exam #3 (Local),Proctored Exam #3 (Remote),10
+CJL1100,1,120,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),20
+CJL2062,0,0,0,0,0,0,,0,0,0,0,,,,0
+CJL3044,1,90,0,0,0,0,,0,0,0,0,,Final (Proctored ) - L-Requires Respondus LockDown Browser,Final (Proctored ) - R,25
+CJL3564,1,90,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),25
+CLP1006,0,0,0,0,0,0,,0,0,0,0,,,,0
+CLP2140,1,120,0,0,0,0,,1,0,0,0,,Proctored Final (Local),Proctored Final (Remote),15
+CNT4603,0,0,0,0,0,0,,0,0,0,0,,,,0
+CNT4702,0,90,1,0,0,1,,0,0,0,0,,,,25
+COP1332,1,90,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),10
+COP1334,0,0,0,0,0,0,,0,0,0,0,,,,20
+COP2333,1,90,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),15
+COP2800,1,0,0,0,0,0,,0,0,0,0,,FINAL PROCTOR EXAM (LOCAL),FINAL PROCTOR EXAM (REMOTE),0
+COP2805C,1,75,0,0,0,0,,0,0,0,0,,Final Proctored Exam (Local),Final Proctored Exam (Remote),20
+COP2822,1,90,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),10
+COP4656,0,0,0,0,0,0,,0,0,0,0,,,,0
+COP4834,0,0,0,0,0,0,,0,0,0,0,,,,0
+CTS1131,1,45,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),20
+CTS1134,1,90,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),10
+CTS2463,1,120,1,1,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),30
+DEP2000,0,0,0,0,0,0,,0,0,0,0,,,,0
+DSC1006,0,0,0,0,0,0,,0,0,0,0,,,,0
+DSC2242,1,60,0,0,0,0,,0,0,0,0,,Proctored (Local) Final Exam,Proctored (Remote) Final Exam,25
+DSC2590,1,120,0,0,0,0,,1,1,0,0,,Final Exam (local),Final Exam (remote),25
+DSC4012,0,0,0,0,0,0,,0,0,0,0,,,,0
+EAP1600,0,0,0,0,0,0,,0,1,0,0,Headphones,,,NA
+EAP1600L,0,0,0,0,0,0,,0,0,0,0,,,,0
+EAP1620,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (Local),Proctored Final (Remote),15
+EAP1640,1,120,1,0,1,0,,1,1,0,0,,Proctored Final (L),Proctored Final ( R ),25
+EAP1640L,1,90,0,0,0,0,,0,0,0,0,,Proctored Final (L),Proctored Final (R),25
+EAP1660,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (L),Proctored Final ?,25
+ECO2013,1,90,0,0,0,0,,1,1,0,1,,Final Exam (local),Final Exam (remote),20
+ECO2023,1,90,0,0,0,0,,1,1,0,1,,Proctored Final Exam (local),Proctored Final Exam (remote),20
+ECO2301,0,0,0,0,0,0,,0,0,0,0,,,,0
+EDF1005,1,90,0,0,0,0,,0,0,0,0,,Final Exam (local),Final Exam (remote),10
+EDF2085,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (Local,Proctored Final (remote),10
+EEC2523,0,0,0,0,0,0,,0,0,0,0,,,,0
+EET1015C,0,0,0,0,0,0,,0,0,0,0,,,,0
+EET1025C,0,0,0,0,0,0,,0,0,0,0,,,,0
+EET1580,0,0,0,0,0,0,,0,0,0,0,,,,0
+EET1581,0,0,0,0,0,0,,0,0,0,0,,,,0
+EET2547C,0,0,0,0,0,0,,0,0,0,0,,,,0
+EME2040,1,90,0,0,0,0,,0,0,0,0,,Proctored Final Exam (local),Proctored Final Exam (remote),10
+ENC0015,1,105,1,0,1,0,,1,1,0,0,,Proctored Final (local),Proctored Final (remote),20
+ENC0020,0,0,0,0,0,0,,0,0,0,0,,,,0
+ENC0021,0,0,0,0,0,0,,0,0,0,0,,,,0
+ENC0025,1,120,1,0,1,0,,1,1,0,0,,Proctored Final (local),Proctored Final (remote),20
+ENC1101,0,0,0,0,0,0,,0,0,0,0,,,,0
+ENC1102,1,120,1,0,1,0,,1,1,0,0,,Proctored Final Essay (local),Proctored Final Essay (remote),30
+ENC2300,0,0,0,0,0,0,,0,0,0,0,,,,0
+ENT2502,1,90,1,0,1,0,,0,0,0,0,,Proctored Final Exam (local),Proctored Final Exam (remote),20
+ESC1000,1,120,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),30
+EST1572,0,0,0,0,0,0,,0,0,0,0,,,,0
+EVR1001,0,0,0,0,0,0,,0,0,0,0,,,,0
+FIN2000,1,90,1,1,0,0,,1,1,1,0,Open PDF- Open/Use Excel,Final Exam (Module 4 Test) (Local),Final Exam (Module 4 Test) (Remote),30
+FIN2010,0,0,0,0,0,0,,0,0,0,0,Scientific Calculator,,,0
+FIN2051,1,75,0,0,0,0,,0,0,0,0,,Exam 4 Proctored (Local),Exam 4 Proctored (Remote),20
+FIN2100,1,90,0,0,0,0,,0,0,0,0,,Final Exam (Module 4 Test) (Local),Final Exam (Module 4 Test) (Remote),20
+FIN3400,1,120,0,0,0,0,,1,1,1,1,Any calculator- Financial Calculator- Scientific Calculator, Proctored Final Exam (Local), Proctored Final Exam (Remote),500 points
+FIN3403,1,120,1,1,0,0,Algorithmic,1,1,0,0,Financial Calculator- Open PDF- Open/Use Excel,Final Exam (Ch 9-14 18 20) Local,Final Exam (Ch 9-14 18 20) Remote,40
+FOT2826,0,0,0,0,0,0,,0,0,0,0,,,,0
+FSE1000,0,0,0,0,0,0,,0,0,0,0,,,,0
+FSE2931,0,0,0,0,0,0,,0,0,0,0,,,,0
+FSE2932,0,0,0,0,0,0,,0,0,0,0,,,,0
+GEB1011,0,0,0,0,0,0,,0,0,0,0,,,,0
+GEB2112,0,0,0,0,0,0,,0,0,0,0,,,,0
+GEB2350,1,60,1,0,0,1,,0,0,0,0,,Final Exam (local),Final Exam (remote),20
+GEB3358,0,0,0,0,0,0,,0,0,0,0,,,,0
+HFT1000,1,60,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),20
+HFT1210,1,60,0,0,0,0,,0,0,0,0,,Final Exam (Local Proctored),Final Exam (Remote Proctored),20
+HFT2500,0,0,0,0,0,0,,0,0,0,0,,,,0
+HFT2800,1,60,1,1,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),NA
+HIM0434,1,120,1,1,0,0,,1,1,0,0,,Final Exam (Local),Final Exam (Remote),30
+HIM0450,1,120,0,0,0,0,,1,1,0,0,,Final Exam (Local),Final Exam (Remote),30
+HIM1000,1,90,0,0,0,0,,0,0,0,0,,Fin al Exam (Local),Final Exam (Remote),35
+HIM1300,0,0,0,0,0,0,,0,0,0,0,,,,0
+HIM2214C,1,120,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),30
+HIM2433,1,90,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),35
+HIM2472,1,120,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),20
+HLP1081,1,90,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),25
+HSC0003,1,120,0,0,0,0,,1,1,0,0,,Final Exam (Local),Final Exam (Remote),20
+HSC2400,1,60,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),40
+HUM1020,0,0,0,0,0,0,,0,0,0,0,,,,0
+HUN1201,0,0,0,0,0,0,,0,0,0,0,,,,0
+IND1100,1,75,0,0,0,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),40
+INR2002,1,90,1,0,0,1,,1,1,1,0,,Proctored Final (Local),Proctored Final (Remote),15
+ISM4011,0,0,0,0,0,0,,0,0,0,0,,,,0
+ISS1120,1,70,0,0,0,0,,1,1,0,0,,Proctored Final Exam (Test 6) Local,Proctored Final Exam (Test 6) Remote,35
+ISS1161,0,0,0,0,0,0,,0,0,0,0,,,,0
+LIS2004,1,60,0,0,0,0,,0,0,0,0,,Proctored Final (Local),Proctored Final (Remote),10
+LIT2120,0,0,0,0,0,0,,0,0,0,0,,,,0
+LIT2480,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAC1105,1,90,0,0,0,0,,1,1,1,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),30
+MAC1114,1,90,0,0,0,0,,1,1,1,0,Open PDF,Final Exam (local),Final Exam (remote),20
+MAC1140,1,120,0,0,0,0,,1,1,1,0,,Proctored Final (Local),Proctored Final (Remote),15
+MAC1147,1,90,0,0,0,0,,1,1,0,1,,Proctored Final Exam (L) 2015-3,Proctored Final Exam (R) 2015-3,40
+MAC2233,1,90,0,0,0,0,,1,1,0,1,,Final Exam (local),Final Exam (remote),35
+MAN2021,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN2604,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN3025,1,120,0,0,0,0,,1,0,0,0,,Proctored Final - Exam 4 (Local),Proctored Final - Exam 4 (Remote),30
+MAN3065,1,120,0,0,0,0,,0,0,0,0,,Exam 4 - Final Exam (Local),Exam 4 - Final Exam (Remote),25
+MAN3240,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN3301,0,0,0,0,0,0,,Exempt,0,0,0,,Final Exam Chapters 8 - 16 (Local),Final Exam Chapters 8 - 16 (Remote),0
+MAN3504,1,120,1,0,0,1,,1,1,0,0,,Final Exam (Local),Final Exam (Remote),20
+MAN3506,1,90,0,0,0,0,,1,1,0,0,Scientific Calculator,Proctored Final Exam (local),Proctored Final Exam (remote),20
+MAN3554,1,90,1,0,1,1,,1,1,0,0,,Proctored Final Exam (local),Proctored Final Exam (remote),20
+MAN3583,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN3786,1,90,0,0,0,0,,1,1,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),20
+MAN4120,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN4162,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN4520,1,90,1,0,1,0,,1,1,0,0,,,,35
+MAN4523,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN4597,1,120,1,0,1,0,,1,1,0,0,,,,15
+MAN4720,1,120,1,0,0,1,,0,0,0,0,, Module 4 Exam - Proctored Final (Local), Module 4 Exam - Proctored Final (Remote),20
+MAN4894,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN4900,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN4940,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAN4941,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAR1011,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAR1210,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAR1720,1,120,0,0,0,0,,0,0,0,0,,Final Proctored Exam (Local),Final Proctored Exam (Remote),15
+MAR2150,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAT0002,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAT0018,1,0,0,0,0,0,,0,0,0,0,,,,0
+MAT0024,0,0,0,0,0,0,,0,0,0,0,,,,0
+MAT0028,1,90,1,1,0,0,,1,1,0,0,,Final Exam (Local),Final Exam (remote),35
+MAT1033,1,90,0,0,0,0,,1,1,1,0,,Proctored Final (local),Proctored Final (remote),40
+MCB2010,1,70,0,0,0,0,,0,0,0,0,,Proctored Final Exam (local),Proctored Final Exam (remote),20
+MGF1106,1,90,0,0,0,0,,1,1,1,1,,Final Exam (Local),Final Exam (Remote),20
+MGF1107,1,120,0,0,0,0,,1,1,1,0,,Proctored Final Exam (local),Proctored Final Exam (remote),10
+MKA1021,1,120,0,0,0,0,,0,0,0,0,,Final Proctored (Local),Final Proctored (Remote),18
+MKA1041,1,90,1,0,1,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),20
+MKA1161,0,0,0,0,0,0,,0,0,0,0,,,,0
+MNA1345,0,0,0,0,0,0,,0,0,0,0,, Proctored Final Exam (local), Proctored Final Exam (remote),20
+MTB1103,1,120,0,0,0,0,,1,1,1,0,Open PDF,Final Exam (Local),Final Exam (Remote),15
+MTB1322,1,90,0,0,0,0,,1,1,0,0,Scientific Calculator,Proctored Final (local),Proctored Final (remotel),25
+MUL1010,1,120,0,0,0,0,,0,0,0,0,Headphones,Final Exam (Local),Final Exam (Remote),20
+MUL2380,1,120,0,0,0,0,,1,0,0,0,Headphones- Speakers,Final Exam (Local),Final Exam (Remote),15
+MUM2700,1,0,0,0,0,0,,0,0,0,0,,,,0
+MUM2702,1,120,0,0,0,0,,1,1,1,0,,Final Exam (Local),Final Exam (Remote),7
+MUM2703,0,0,0,0,0,0,,0,0,0,0,,,,0
+MUM2704,1,120,1,0,0,1,,1,0,0,0,Headphones- Speakers,Final Exam (Local),Final Exam (Remote),15
+NSP3685,1,90,1,0,1,1,,1,1,1,0,Any Calculator- Open PDF,Proctored Final Exam (Local),Proctored Final Exam (Remote),20
+NUR1002,1,90,0,0,0,0,,1,1,0,0,,Final Exam - Local,Final Exam - Remote,0
+NUR1142,1,90,1,1,0,0,,1,1,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),0
+NUR2212,1,120,0,0,0,0,,0,0,0,0,,Final Exam (L),Final Exam  (R ),0
+NUR2310,1,90,1,0,1,0,,0,0,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),0
+NUR2420,1,90,1,1,1,1,,0,0,0,0,,Proctored Final (L) - Spring 2015-2,Proctored Final (R) - Spring 2015-2,0
+NUR2520,1,60,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),0
+NUR3045,0,0,0,0,0,0,,0,0,0,0,,,,0
+NUR3069,1,60,0,0,0,0,,0,0,0,0,,Final Exam (local),Final Exam (remote),15
+NUR3165,1,90,1,0,0,0,,1,1,0,0,,Final Exam (Local),Final Exam (Remote),20
+NUR3178,1,120,1,0,0,1,,1,1,0,0,,Final Exam (local),Final Exam (remote),10
+NUR3289,1,90,0,0,0,0,,1,1,0,0,,Proctored Final Exam (L),Proctored Final Exam ( R ),20
+NUR3674,1,90,1,0,0,1,,1,1,0,0,,Final Exam (L),Final Exam ?,10
+NUR3805,1,90,0,0,0,0,,1,1,0,0,,Proctored Final Exam (L),Proctored Final Exam ( R ),30
+NUR3846,1,120,1,0,1,1,,1,1,0,0,,Proctored Final Exam (local),Proctored Final Exam (remote),15
+NUR4636,0,0,0,0,0,0,,0,0,0,0,,,,0
+NUR4667,0,0,0,0,0,0,,0,0,0,0,,,,0
+NUR4827,1,90,1,0,1,0,,1,1,0,0,,Proctored Final Exam (Local),Proctored Final Exam (Remote),25
+OCE1001,1,120,1,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),25
+OST2335,0,0,0,0,0,0,,0,0,0,0,,,,0
+PHI2010,1,90,1,0,0,1,,0,0,0,0,,Proctored Final Exam (local),Proctored Final Exam (remote),10
+PHI2604,1,120,0,0,0,0,,0,0,0,0,,Final Examination (L),Final Examination (R),5
+PHY1025,1,120,0,0,0,0,,1,1,0,1,Protractor- Ruler,Proctored Final Exam (local),Proctored Final Exam (remote),30
+PLA2003,0,0,0,0,0,0,,0,0,0,0,,,,0
+POS2041,0,0,0,0,0,0,,0,0,0,0,,,,0
+POS2112,1,60,0,0,0,0,,1,1,0,0,,Proctored Final (L),Proctored Final ( R ),30
+PSC1121,1,60,0,0,0,0,,1,1,0,0,,Final Exam (Local),Final Exam (Remote),100 points
+PSC1515,1,60,0,0,0,0,,0,0,0,0,,Final Exam (Local),Final Exam (Remote),25
+PSY2012,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (L),Proctored Final (R),15
+PUR2003,0,0,0,0,0,0,,0,0,0,0,,,,0
+QMB2100,1,120,1,0,0,1,,1,1,1,0,Open PDF- Open/Use Excel,Proctored Final Exam 12 13 15 (Local),Proctored Final Exam Ch 121315 (Remote),25
+QMB2100L,0,0,0,0,0,0,,0,0,0,0,,,,0
+REA0002,0,0,0,0,0,0,,0,0,0,0,,,,0
+REA0003,0,0,0,0,0,0,,0,0,0,0,,,,0
+REA0007,1,120,1,0,0,1,,1,1,0,0,,Final Exam (local),Final Exam (remote),15
+REA0017,1,91,0,0,0,0,,0,0,0,0,,Final Exam (local),Final Exam (remote),30
+REE2040,0,0,0,0,0,0,,0,0,0,0,,,,0
+REL1210,0,0,0,0,0,0,,0,0,0,0,,,,0
+REL1240,0,0,0,0,0,0,,0,0,0,0,,,,0
+REL2300,0,0,0,0,0,0,,0,0,0,0,,,,0
+SBM1000,0,0,0,0,0,0,,0,0,0,0,,,,0
+SCC1000,0,0,0,0,0,0,,0,0,0,0,,,,0
+SCC2020,0,0,0,0,0,0,,0,0,0,0,,,,0
+SLS1106,1,90,0,0,0,0,,0,0,0,0,,,,10
+SLS1505,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (L),Proctored Final ( R ),10
+SLS1510,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (L),Proctored Final (R ),15
+SON1145L,0,0,0,0,0,0,,0,0,0,0,,,,0
+SPC1017,0,0,0,0,0,0,,0,0,0,0,,,,0
+SPN1120,1,90,1,1,1,1,,1,0,0,0,Headphones- Speakers,Final Exam (LCL),Final Exam (RMT),22
+SPN1121,1,90,1,1,1,1,,1,0,0,0,Speakers,FINAL EXAM (LCL),FINAL EXAM (RMT),23
+SPN2220,0,0,0,0,0,0,,0,0,0,0,,,,0
+STA2023,1,120,1,0,0,1,,1,1,1,1,Open PDF,Final Exam (Local),Final Exam (Remote),30
+SYG2000,0,0,0,0,0,0,,0,0,0,0,,,,0
+SYG2230,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (Local),Proctored Final (Remote),20
+TAX2000,0,0,0,0,0,0,,0,0,0,0,,,,0
+TAX2010,0,0,0,0,0,0,,0,0,0,0,,,,0
+THE2000,0,0,0,0,0,0,,0,0,0,0,,,,0
+TRA1154,1,120,1,0,1,0,,1,1,0,0,,Proctored Final Exam (local),Proctored Final Exam (remote),25
+TRA2010,1,90,1,0,0,1,,1,1,0,0,,Final Exam (local),Final Exam (remote),20
+TRA3132,1,120,1,0,0,1,,1,1,0,0,,Final Exam (local),Final Exam (remote),25
+WOH2012,1,120,0,0,0,0,,0,0,0,0,,Proctored Final (Local),Proctored Final (Remote),20

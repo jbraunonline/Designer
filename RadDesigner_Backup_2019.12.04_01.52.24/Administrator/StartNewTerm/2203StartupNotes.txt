@@ -1,0 +1,224 @@
+
+//at start of new term, these tables must be updated: OL_MasterCourse, OL_Textbooks, OL_MasterExams,OL_buildingBlocks
+//use the templates below to create the sql scripts
+// the process is  
+     Backup the OL master tables
+     Create a new table with the records for the past term table_BU
+     Modify the data for the new term  table_temp
+     Add the updated data to the master table
+ALSO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Backup the OL_Progress table before running the page listed below.
+use VC_VCData1
+DROP TABLE OL_Progress_BU;
+Select *
+into dbo.OL_Progress_BU
+from dbo.OL_Progress;
+
+
+Then In RADdesigner project
+run file AddProgressData
+in Administrator>>StartNewTerm>>AddProgressData.aspx
+this creats new records for progress (change term in code) with all records set to 0
+
+>>>>>>>>>>>>>>>>>>>>>>Add OL_MasterProctor Data
+First back up ol_MasterProctor  Delete the _BU table if it already exists
+
+Select *
+into dbo.OL_MasterProctor_BU
+from dbo.OL_MasterProctor
+
+
+Then run StartNewTerm/addMasterProctor.aspx   this uses data that was uploaded previously to prepare for
+setting up Proctored Exam Data for the term.
+This is bullshit because we are creating data used to setup proctored exams and that app runs in the vcData project!
+Fix this idiot!
+................................................................................................................................
+Set pilots to active for past term>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+**********update.  Instead of automatically moving a course from pilot to active, verify which courses are no longer pilots.
+
+update [VC_VCData1].[dbo].[OL_MasterCourse]
+set status='Active'
+  where term = '2193'
+  and Status = 'Pilot'
+  NEW COURSES>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*********Depreciated......Designers can now create their own new courses in the GUI
+   in the NewCourse folder use the Step1 and Step2 files to add new catalog entriesand course records.
+      You can create either single or multiple records in each file.
+	   this creates records for the OL_MasterCourse, OL_MasterExam, and OL_Progress tables
+	   New textbooks can be created by the designer in the Designer/AddTextbooks.aspx
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1. If OL_MasterCourse_BU exists, drop the table so it can be recreated in the next step
+
+use VC_VCData1
+DROP TABLE OL_MasterCourse_BU;
+
+
+2. create a backup of entire OL_MasterCourse
+//this allows data security if the next processes fail.  You can always restore the data and start over.
+""""""""""""""""""""""""""""""""""""""""""""
+use VC_VCData1
+
+Select *
+into dbo.OL_MasterCourse_BU
+from dbo.OL_MasterCourse
+
+
+3. Then create a temp copy of OL_MasterCourse containing only the past terms courses.
+'''''''''''''''''''''''''''''''''''''''''''
+(If temp table exists, Either drop the table or delete old temp data)
+
+use VC_VCData1
+DROP TABLE OL_MasterCourseTemp;
+
+(Only put the past term data into the temp tabel)
+
+use VC_VCData1
+
+Select *
+into dbo.OL_MasterCourseTemp
+from dbo.OL_MasterCourse
+where Term='2197'
+
+4. Update the temp table for the correct new terms
+'''''''''''''''''''''''''''''''''''''''''
+A-------------------------------------
+use VC_VCData1
+UPDATE dbo.OL_MasterCourseTemp
+SET    MasterName = replace(MasterName, '2197_', '2203_')
+
+B----------------------------------------
+///remember to update the old mastersource to the correct terms  ile in 2197 courses the old terms was 2193 which should go to 2195
+use VC_VCData1
+UPDATE dbo.OL_MasterCourseTemp
+SET    ThisMasterSource = replace(ThisMasterSource, '2195_', '2197_')
+
+C-----------------------------------------------
+use VC_VCData1
+UPDATE dbo.OL_MasterCourseTemp
+Set Term='2203'
+
+5. Drop the Master_ID column so the records can be copied
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+use VC_VCData1
+ALTER TABLE dbo.OL_MasterCourseTemp
+DROP COLUMN Master_ID; 
+
+6. Finally copy the temp records back to the OL_MasterCourse table
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+use VC_VCData1
+INSERT INTO dbo.OL_MasterCourse
+SELECT * FROM dbo.OL_MasterCourseTemp
+
+For dbo.OL_Textbooks[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+
+1. Drop OL_Textbooks_BU----------------------------
+DROP TABLE dbo.OL_Textbooks_BU;
+
+2. make a BU-----------------------------------------
+
+select *
+into dbo.OL_Textbooks_BU
+from dbo.OL_Textbooks
+
+3. Create a OL_TextbooksTemp with only last term's records----------------
+Select *
+into dbo.OL_TextbooksTemp
+from dbo.OL_Textbooks
+where Term='2197'
+
+4. Change term to 2197------------------------
+UPDATE dbo.OL_TextbooksTemp
+Set Term='2203'
+
+///update the mastercourse to 2197   NOTE misnaming convention  here it is mastercourse not mastername
+
+use VC_VCData1
+UPDATE dbo.OL_TextbooksTemp
+SET    MasterCourse = replace(MasterCoursd, '2197_', '2203_')
+
+5. Drop the ID field from OL_TextbooksTemp--------------------------------
+ALTER TABLE dbo.OL_TextbooksTemp
+DROP COLUMN ID; 
+
+6 Copy OL_TextbooksTemp into OL_Textbooks-------------------------------------
+
+INSERT INTO dbo.OL_Textbooks
+SELECT * FROM dbo.OL_TextbooksTemp
+
+For OL_MasterExams ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+1. Drop OL_MasterExam_BU----------------------------
+DROP TABLE dbo.OL_MasterExam_BU;
+DROP TABLE dbo.OL_MasterExamTemp;
+
+2. make a BU-----------------------------------------
+
+select *
+into dbo.OL_MasterExam_BU
+from dbo.OL_MasterExam
+
+3. Create a OL_MasterExamTemp with only last term's records----------------
+Select *
+into dbo.OL_MasterExamTemp
+from dbo.OL_MasterExam
+where Term='2197'
+
+4. Change term to 2197------------------------
+UPDATE dbo.OL_MasterExamTemp
+Set Term='2203'
+//////////////////////////////
+Update MasterName
+
+UPDATE dbo.OL_MasterExamTemp
+SET    MasterName = replace(MasterName, '2197_', '2203_')
+
+5. Drop the ID field from OL_TextbooksTemp--------------------------------
+ALTER TABLE dbo.OL_MasterExamTemp
+DROP COLUMN Exam_ID; 
+
+6 Copy OL_TextbooksTemp into OL_Textbooks-------------------------------------
+
+INSERT INTO dbo.OL_MasterExam
+SELECT * FROM dbo.OL_MasterExamTemp
+
+For OL_BuildingBlocks ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+dbo.OL_BBlock_Data
+
+
+1. Drop OL_BBlock_Data_BU----------------------------
+DROP TABLE dbo.OL_BBlock_Data_BU;
+DROP TABLE dbo.OL_BBlock_DataTemp;
+
+2. make a BU-----------------------------------------
+
+select *
+into dbo.OL_BBlock_Data_BU
+from dbo.OL_BBlock_Data
+
+3. Create a OL_BBlock_DataTemp with only last term's records----------------
+Select *
+into dbo.OL_BBlock_DataTemp
+from dbo.OL_BBlock_Data
+where Term='2197'
+
+4. Change term to 2197------------------------
+UPDATE dbo.OL_BBlock_DataTemp
+Set Term='2203'
+//////////////////////////////
+Update MasterName
+
+UPDATE dbo.OL_BBlock_DataTemp
+SET    MasterName = replace(MasterName, '2197_', '2203_')
+
+5. Drop the ID field from OL_BBlock_DataTemp--------------------------------
+ALTER TABLE dbo.OL_BBlock_DataTemp
+DROP COLUMN BBData_ID; 
+
+6 Copy OL_BBlock_DataTemp- to OL_BBlock_Data ------------------------------------
+
+INSERT INTO dbo.OL_BBlock_Data
+SELECT * FROM dbo.OL_BBlock_DataTemp
+
+

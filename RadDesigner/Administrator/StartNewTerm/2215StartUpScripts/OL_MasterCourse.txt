@@ -1,0 +1,76 @@
+﻿OL_MasterCourse, OL_Textbooks, OL_MasterExams,OL_buildingBlocks
+
+...Backup the OL_Mastercourse table.........................................................................................................
+use VC_VCData1
+DROP TABLE OL_MasterCourse_BU;
+
+..... Make a BU of OL_MasterCourse..............
+use VC_VCData1
+Select *
+into dbo.OL_MasterCourse_BU
+from dbo.OL_MasterCourse;
+
+.....Drop the Temp working table......................xxx
+use VC_VCData1
+DROP TABLE OL_MasterCourseTemp;
+
+..........Copy 2213 records to Temp..............
+use VC_VCData1
+Select *
+into dbo.OL_MasterCourseTemp
+from dbo.OL_MasterCourse
+where Term='2213';
+
+......Update temp table to 2215.............
+use VC_VCData1
+UPDATE dbo.OL_MasterCourseTemp
+SET    MasterName = replace(MasterName, '2213_', '2215_')
+
+........Update the source course for the 2213 courses to the next term...(Remember, thie master term here is two terms back)..........
+use VC_VCData1
+UPDATE dbo.OL_MasterCourseTemp
+SET    ThisMasterSource = replace(ThisMasterSource, '2207_', '2213_'),
+Term = '2213'
+
+....Drop the ID field..................
+use VC_VCData1
+ALTER TABLE dbo.OL_MasterCourseTemp
+DROP COLUMN Master_ID; 
+
+,,,,,,,,Finally copy updated 2205 records into the OL_MasterCourse table.........
+use VC_VCData1
+INSERT INTO dbo.OL_MasterCourse
+SELECT * FROM dbo.OL_MasterCourseTemp
+
+{{{{{{{{{{{{{{{{{{{{{    All in One  }}}}}}}}}}}}}}}}}}}}}]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+use VC_VCData1
+
+DROP TABLE OL_MasterCourse_BU;
+
+Select *
+into dbo.OL_MasterCourse_BU
+from dbo.OL_MasterCourse;
+
+DROP TABLE OL_MasterCourseTemp;
+
+Select *
+into dbo.OL_MasterCourseTemp
+from dbo.OL_MasterCourse
+where Term='2213';
+
+use VC_VCData1
+UPDATE dbo.OL_MasterCourseTemp
+SET    MasterName = replace(MasterName, '2213_', '2215_');
+
+UPDATE dbo.OL_MasterCourseTemp
+SET    ThisMasterSource = replace(ThisMasterSource, '2207_', '2213_');
+
+UPDATE dbo.OL_MasterCourseTemp
+SET Term = '2215';
+
+/////////////////////////////////////////...Verify temp file and then add to main table///
+
+use VC_VCData1
+INSERT INTO dbo.OL_MasterCourse
+SELECT * FROM dbo.OL_MasterCourseTemp

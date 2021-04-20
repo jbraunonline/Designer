@@ -1,0 +1,48 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="RadDesigner.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+        </Scripts>
+    </telerik:RadScriptManager>
+    <script type="text/javascript">
+        //Put your JavaScript code here.
+    </script>
+    <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+    </telerik:RadAjaxManager>
+
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/BlankOnline100x1900.png" BorderStyle="None" BorderWidth="0" ImageAlign="AbsBottom"  />
+
+        <telerik:RadMenu ID="RadMenu1" Runat="server" Skin="WebBlue" BorderStyle="None" BorderWidth="0px">
+            <Items>
+                <telerik:RadMenuItem Text="Home" NavigateUrl="~/Home.aspx" Target="ContentPlaceHolder1" />
+
+            </Items>
+        </telerik:RadMenu>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

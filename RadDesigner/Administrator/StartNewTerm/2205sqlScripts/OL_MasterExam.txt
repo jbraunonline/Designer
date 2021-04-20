@@ -1,0 +1,36 @@
+﻿For OL_MasterExams ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+1. Drop OL_MasterExam_BU & OL_MasterExamTemp----------------------------
+DROP TABLE dbo.OL_MasterExam_BU;
+DROP TABLE dbo.OL_MasterExamTemp;
+
+2. make a BU-----------------------------------------
+
+select *
+into dbo.OL_MasterExam_BU
+from dbo.OL_MasterExam
+
+3. Create a OL_MasterExamTemp with only last term's records----------------
+Select *
+into dbo.OL_MasterExamTemp
+from dbo.OL_MasterExam
+where Term='2205
+
+4. Change term to 2197------------------------
+UPDATE dbo.OL_MasterExamTemp
+Set Term='2207'
+//////////////////////////////
+Update MasterName
+
+UPDATE dbo.OL_MasterExamTemp
+SET    MasterName = replace(MasterName, '2205_', '2207_')
+
+5. Drop the ID field from OL_MasterExamTemp-------------------------------
+ALTER TABLE dbo.OL_MasterExamTemp
+DROP COLUMN Exam_ID; 
+
+6 Copy OL_TextbooksTemp into OL_Textbooks-------------------------------------
+
+INSERT INTO dbo.OL_MasterExam
+SELECT * FROM dbo.OL_MasterExamTemp

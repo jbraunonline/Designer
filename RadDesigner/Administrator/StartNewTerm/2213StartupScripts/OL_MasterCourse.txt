@@ -1,0 +1,43 @@
+﻿OL_MasterCourse, OL_Textbooks, OL_MasterExams,OL_buildingBlocks
+
+...Backup the OL_Mastercourse table.........................................................................................................
+use VC_VCData1
+DROP TABLE OL_MasterCourse_BU;
+
+..... Make a BU of OL_MasterCourse..............
+use VC_VCData1
+Select *
+into dbo.OL_MasterCourse_BU
+from dbo.OL_MasterCourse;
+
+.....Drop the Temp working table......................xxx
+use VC_VCData1
+DROP TABLE OL_MasterCourseTemp;
+
+..........Copy 2205 records to Temp..............
+use VC_VCData1
+Select *
+into dbo.OL_MasterCourseTemp
+from dbo.OL_MasterCourse
+where Term='2207';
+
+......Update temp table to 2207.............
+use VC_VCData1
+UPDATE dbo.OL_MasterCourseTemp
+SET    MasterName = replace(MasterName, '2207_', '2213_')
+
+........Update the source course for the 2205 courses to the next term.............
+use VC_VCData1
+UPDATE dbo.OL_MasterCourseTemp
+SET    ThisMasterSource = replace(ThisMasterSource, '2205_', '2207_'),
+Term = '2213'
+
+....Drop the ID field..................
+use VC_VCData1
+ALTER TABLE dbo.OL_MasterCourseTemp
+DROP COLUMN Master_ID; 
+
+,,,,,,,,Finally copy updated 2205 records into the OL_MasterCourse table.........
+use VC_VCData1
+INSERT INTO dbo.OL_MasterCourse
+SELECT * FROM dbo.OL_MasterCourseTemp

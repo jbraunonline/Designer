@@ -1,0 +1,1467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEFFACDD-8565-4D7A-BAC5-9C3107508B99}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RadDesigner</RootNamespace>
+    <AssemblyName>RadDesigner</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RadDesigner.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RadDesigner.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\lib\RCAJAX\2017.2.711.40\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2017.2.711.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.2.711.40\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\addAudts.aspx.designer.vb">
+      <DependentUpon>addAudts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\addAudts.aspx.vb">
+      <DependentUpon>addAudts.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\addAuditStatus.aspx.designer.vb">
+      <DependentUpon>addAuditStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\addAuditStatus.aspx.vb">
+      <DependentUpon>addAuditStatus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AdminUsers.aspx.designer.vb">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AdminUsers.aspx.vb">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\AllCourseProgress.aspx.designer.vb">
+      <DependentUpon>AllCourseProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\AllCourseProgress.aspx.vb">
+      <DependentUpon>AllCourseProgress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\AllStaff.aspx.designer.vb">
+      <DependentUpon>AllStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\AllStaff.aspx.vb">
+      <DependentUpon>AllStaff.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\AuditDelete.aspx.designer.vb">
+      <DependentUpon>AuditDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\AuditDelete.aspx.vb">
+      <DependentUpon>AuditDelete.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\DeleteAudit.aspx.designer.vb">
+      <DependentUpon>DeleteAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\DeleteAudit.aspx.vb">
+      <DependentUpon>DeleteAudit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\ManageCatalog.aspx.designer.vb">
+      <DependentUpon>ManageCatalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\ManageCatalog.aspx.vb">
+      <DependentUpon>ManageCatalog.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\UploadProctorUdata.aspx.designer.vb">
+      <DependentUpon>UploadProctorUdata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\UploadProctorUdata.aspx.vb">
+      <DependentUpon>UploadProctorUdata.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Development\BBlockReport.aspx.designer.vb">
+      <DependentUpon>BBlockReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Development\BBlockReport.aspx.vb">
+      <DependentUpon>BBlockReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Development\DivTest.aspx.designer.vb">
+      <DependentUpon>DivTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Development\DivTest.aspx.vb">
+      <DependentUpon>DivTest.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Development\GETbb.aspx.designer.vb">
+      <DependentUpon>GETbb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Development\GETbb.aspx.vb">
+      <DependentUpon>GETbb.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Development\iFrame.aspx.designer.vb">
+      <DependentUpon>iFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Development\iFrame.aspx.vb">
+      <DependentUpon>iFrame.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Development\SideSide.aspx.designer.vb">
+      <DependentUpon>SideSide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Development\SideSide.aspx.vb">
+      <DependentUpon>SideSide.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Development\Update panel.aspx.designer.vb">
+      <DependentUpon>Update panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Development\Update panel.aspx.vb">
+      <DependentUpon>Update panel.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Development\WebForm2.aspx.designer.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Development\WebForm2.aspx.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsProctoredExam.aspx.designer.vb">
+      <DependentUpon>AsProctoredExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsProctoredExam.aspx.vb">
+      <DependentUpon>AsProctoredExam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\ASAuditSession.aspx.designer.vb">
+      <DependentUpon>ASAuditSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\ASAuditSession.aspx.vb">
+      <DependentUpon>ASAuditSession.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsDualAudit.aspx.designer.vb">
+      <DependentUpon>AsDualAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsDualAudit.aspx.vb">
+      <DependentUpon>AsDualAudit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\ReleaseAudit.aspx.designer.vb">
+      <DependentUpon>ReleaseAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\ReleaseAudit.aspx.vb">
+      <DependentUpon>ReleaseAudit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Reports\bookReport.aspx.designer.vb">
+      <DependentUpon>bookReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Reports\bookReport.aspx.vb">
+      <DependentUpon>bookReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\NewCourseWizard.aspx.designer.vb">
+      <DependentUpon>NewCourseWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\NewCourseWizard.aspx.vb">
+      <DependentUpon>NewCourseWizard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Development\showmac.aspx.designer.vb">
+      <DependentUpon>showmac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Development\showmac.aspx.vb">
+      <DependentUpon>showmac.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\MDC_Catalog.aspx.designer.vb">
+      <DependentUpon>MDC_Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\MDC_Catalog.aspx.vb">
+      <DependentUpon>MDC_Catalog.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\UpdateOL_MasterExam_temp4pilots.aspx.designer.vb">
+      <DependentUpon>UpdateOL_MasterExam_temp4pilots.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\UpdateOL_MasterExam_temp4pilots.aspx.vb">
+      <DependentUpon>UpdateOL_MasterExam_temp4pilots.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UPDate_OL_Catalog.aspx.designer.vb">
+      <DependentUpon>UPDate_OL_Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UPDate_OL_Catalog.aspx.vb">
+      <DependentUpon>UPDate_OL_Catalog.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UploadChildCourses.aspx.designer.vb">
+      <DependentUpon>UploadChildCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UploadChildCourses.aspx.vb">
+      <DependentUpon>UploadChildCourses.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UploadOL_BBlockObjs.aspx.designer.vb">
+      <DependentUpon>UploadOL_BBlockObjs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UploadOL_BBlockObjs.aspx.vb">
+      <DependentUpon>UploadOL_BBlockObjs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\_AddMasterProctor.aspx.designer.vb">
+      <DependentUpon>_AddMasterProctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\_AddMasterProctor.aspx.vb">
+      <DependentUpon>_AddMasterProctor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AddNew_OL_MasterCourse.aspx.designer.vb">
+      <DependentUpon>AddNew_OL_MasterCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AddNew_OL_MasterCourse.aspx.vb">
+      <DependentUpon>AddNew_OL_MasterCourse.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AddSweep.aspx.designer.vb">
+      <DependentUpon>AddSweep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AddSweep.aspx.vb">
+      <DependentUpon>AddSweep.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AddToCatalog.aspx.designer.vb">
+      <DependentUpon>AddToCatalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AddToCatalog.aspx.vb">
+      <DependentUpon>AddToCatalog.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Add_MasterPhaseData.aspx.designer.vb">
+      <DependentUpon>Add_MasterPhaseData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Add_MasterPhaseData.aspx.vb">
+      <DependentUpon>Add_MasterPhaseData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Administrator.aspx.designer.vb">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Administrator.aspx.vb">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\AddAllStaff.aspx.designer.vb">
+      <DependentUpon>AddAllStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\AddAllStaff.aspx.vb">
+      <DependentUpon>AddAllStaff.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\getSIS.aspx.designer.vb">
+      <DependentUpon>getSIS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\getSIS.aspx.vb">
+      <DependentUpon>getSIS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\NewMasterShells.aspx.designer.vb">
+      <DependentUpon>NewMasterShells.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\NewMasterShells.aspx.vb">
+      <DependentUpon>NewMasterShells.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\ProctorReport.aspx.designer.vb">
+      <DependentUpon>ProctorReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\ProctorReport.aspx.vb">
+      <DependentUpon>ProctorReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\SeeAllSessionVars.aspx.designer.vb">
+      <DependentUpon>SeeAllSessionVars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\SeeAllSessionVars.aspx.vb">
+      <DependentUpon>SeeAllSessionVars.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\Top20.aspx.designer.vb">
+      <DependentUpon>Top20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\Top20.aspx.vb">
+      <DependentUpon>Top20.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Admin\Top20Progress.aspx.designer.vb">
+      <DependentUpon>Top20Progress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Admin\Top20Progress.aspx.vb">
+      <DependentUpon>Top20Progress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CheckboxList.aspx.designer.vb">
+      <DependentUpon>CheckboxList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CheckboxList.aspx.vb">
+      <DependentUpon>CheckboxList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CreateMasterCourseByTerm.aspx.designer.vb">
+      <DependentUpon>CreateMasterCourseByTerm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CreateMasterCourseByTerm.aspx.vb">
+      <DependentUpon>CreateMasterCourseByTerm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CreateOOL_Catalog.aspx.designer.vb">
+      <DependentUpon>CreateOOL_Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CreateOOL_Catalog.aspx.vb">
+      <DependentUpon>CreateOOL_Catalog.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\CreateUsers.aspx.designer.vb">
+      <DependentUpon>CreateUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\CreateUsers.aspx.vb">
+      <DependentUpon>CreateUsers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\getDistinct.aspx.designer.vb">
+      <DependentUpon>getDistinct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\getDistinct.aspx.vb">
+      <DependentUpon>getDistinct.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\MODtextbooks.aspx.designer.vb">
+      <DependentUpon>MODtextbooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\MODtextbooks.aspx.vb">
+      <DependentUpon>MODtextbooks.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\NewTextbooks.aspx.designer.vb">
+      <DependentUpon>NewTextbooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\NewTextbooks.aspx.vb">
+      <DependentUpon>NewTextbooks.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\AddProgressData.aspx.designer.vb">
+      <DependentUpon>AddProgressData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\AddProgressData.aspx.vb">
+      <DependentUpon>AddProgressData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\examreport.aspx.designer.vb">
+      <DependentUpon>examreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\examreport.aspx.vb">
+      <DependentUpon>examreport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\_ImportNextTermCourses.aspx.designer.vb">
+      <DependentUpon>_ImportNextTermCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\StartNewTerm\_ImportNextTermCourses.aspx.vb">
+      <DependentUpon>_ImportNextTermCourses.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\StripHTML.aspx.designer.vb">
+      <DependentUpon>StripHTML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\StripHTML.aspx.vb">
+      <DependentUpon>StripHTML.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\test.aspx.designer.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\test.aspx.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UpdateOLMaster.aspx.designer.vb">
+      <DependentUpon>UpdateOLMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UpdateOLMaster.aspx.vb">
+      <DependentUpon>UpdateOLMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UpdatePhaseHistory.aspx.designer.vb">
+      <DependentUpon>UpdatePhaseHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UpdatePhaseHistory.aspx.vb">
+      <DependentUpon>UpdatePhaseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UploadFiaalExamData.aspx.designer.vb">
+      <DependentUpon>UploadFiaalExamData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UploadFiaalExamData.aspx.vb">
+      <DependentUpon>UploadFiaalExamData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UploadMidExamData.aspx.designer.vb">
+      <DependentUpon>UploadMidExamData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UploadMidExamData.aspx.vb">
+      <DependentUpon>UploadMidExamData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsCourse.aspx.designer.vb">
+      <DependentUpon>AsCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsCourse.aspx.vb">
+      <DependentUpon>AsCourse.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsManagement.aspx.designer.vb">
+      <DependentUpon>AsManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsManagement.aspx.vb">
+      <DependentUpon>AsManagement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsMenu.aspx.designer.vb">
+      <DependentUpon>AsMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsMenu.aspx.vb">
+      <DependentUpon>AsMenu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsModules.aspx.designer.vb">
+      <DependentUpon>AsModules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsModules.aspx.vb">
+      <DependentUpon>AsModules.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsStatus.aspx.designer.vb">
+      <DependentUpon>AsStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AsStatus.aspx.vb">
+      <DependentUpon>AsStatus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AuditNotes.aspx.designer.vb">
+      <DependentUpon>AuditNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\AuditNotes.aspx.vb">
+      <DependentUpon>AuditNotes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\Debug.aspx.designer.vb">
+      <DependentUpon>Debug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\Debug.aspx.vb">
+      <DependentUpon>Debug.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\HELP\popup.aspx.designer.vb">
+      <DependentUpon>popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditForm\HELP\popup.aspx.vb">
+      <DependentUpon>popup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditProgress.aspx.designer.vb">
+      <DependentUpon>AsAuditProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\AsAudit\AsAuditProgress.aspx.vb">
+      <DependentUpon>AsAuditProgress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\Associate.aspx.designer.vb">
+      <DependentUpon>Associate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\Associate.aspx.vb">
+      <DependentUpon>Associate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\Tasks\AllTaskList.aspx.designer.vb">
+      <DependentUpon>AllTaskList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\Tasks\AllTaskList.aspx.vb">
+      <DependentUpon>AllTaskList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\Tasks\CompleteTask.aspx.designer.vb">
+      <DependentUpon>CompleteTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\Tasks\CompleteTask.aspx.vb">
+      <DependentUpon>CompleteTask.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\Tasks\MyTasks.aspx.designer.vb">
+      <DependentUpon>MyTasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\Tasks\MyTasks.aspx.vb">
+      <DependentUpon>MyTasks.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\Tasks\PreviewTask.aspx.designer.vb">
+      <DependentUpon>PreviewTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\Tasks\PreviewTask.aspx.vb">
+      <DependentUpon>PreviewTask.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Associate\Tasks\SelectTask.aspx.designer.vb">
+      <DependentUpon>SelectTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Associate\Tasks\SelectTask.aspx.vb">
+      <DependentUpon>SelectTask.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Authenticate.aspx.designer.vb">
+      <DependentUpon>Authenticate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authenticate.aspx.vb">
+      <DependentUpon>Authenticate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Copy\CopyDashboard.aspx.designer.vb">
+      <DependentUpon>CopyDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Copy\CopyDashboard.aspx.vb">
+      <DependentUpon>CopyDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="debug.aspx.designer.vb">
+      <DependentUpon>debug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="debug.aspx.vb">
+      <DependentUpon>debug.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default1.aspx.designer.vb">
+      <DependentUpon>Default1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default1.aspx.vb">
+      <DependentUpon>Default1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\Delivery.aspx.designer.vb">
+      <DependentUpon>Delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\Delivery.aspx.vb">
+      <DependentUpon>Delivery.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\AddTextbook.aspx.designer.vb">
+      <DependentUpon>AddTextbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\AddTextbook.aspx.vb">
+      <DependentUpon>AddTextbook.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\AuditReview.aspx.designer.vb">
+      <DependentUpon>AuditReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\AuditReview.aspx.vb">
+      <DependentUpon>AuditReview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\_Audit.aspx.designer.vb">
+      <DependentUpon>_Audit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\_Audit.aspx.vb">
+      <DependentUpon>_Audit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\_Audit1.aspx.designer.vb">
+      <DependentUpon>_Audit1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\_Audit1.aspx.vb">
+      <DependentUpon>_Audit1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Course.aspx.designer.vb">
+      <DependentUpon>Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Course.aspx.vb">
+      <DependentUpon>Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Management.aspx.designer.vb">
+      <DependentUpon>Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Management.aspx.vb">
+      <DependentUpon>Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Menu.aspx.designer.vb">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Menu.aspx.vb">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Modules.aspx.designer.vb">
+      <DependentUpon>Modules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Modules.aspx.vb">
+      <DependentUpon>Modules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Status.aspx.designer.vb">
+      <DependentUpon>Status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditForm\Status.aspx.vb">
+      <DependentUpon>Status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditProgress.aspx.designer.vb">
+      <DependentUpon>AuditProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\AuditProgress.aspx.vb">
+      <DependentUpon>AuditProgress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\CreateAudit.aspx.designer.vb">
+      <DependentUpon>CreateAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\CreateAudit.aspx.vb">
+      <DependentUpon>CreateAudit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Audit\ReassignAuditor.aspx.designer.vb">
+      <DependentUpon>ReassignAuditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Audit\ReassignAuditor.aspx.vb">
+      <DependentUpon>ReassignAuditor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\BuildingBlocks.aspx.designer.vb">
+      <DependentUpon>BuildingBlocks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\BuildingBlocks.aspx.vb">
+      <DependentUpon>BuildingBlocks.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\BuildingBlocks\BuildingBlockDetails.aspx.designer.vb">
+      <DependentUpon>BuildingBlockDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\BuildingBlocks\BuildingBlockDetails.aspx.vb">
+      <DependentUpon>BuildingBlockDetails.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\BuildingBlocks\BuildingBlockReport.aspx.designer.vb">
+      <DependentUpon>BuildingBlockReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\BuildingBlocks\BuildingBlockReport.aspx.vb">
+      <DependentUpon>BuildingBlockReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\CopyPages\CopyProgress.aspx.designer.vb">
+      <DependentUpon>CopyProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\CopyPages\CopyProgress.aspx.vb">
+      <DependentUpon>CopyProgress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\CopyPages\ReleaseForm.aspx.designer.vb">
+      <DependentUpon>ReleaseForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\CopyPages\ReleaseForm.aspx.vb">
+      <DependentUpon>ReleaseForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\CopyQA.aspx.designer.vb">
+      <DependentUpon>CopyQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\CopyQA.aspx.vb">
+      <DependentUpon>CopyQA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Designer.aspx.designer.vb">
+      <DependentUpon>Designer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Designer.aspx.vb">
+      <DependentUpon>Designer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Design_Course.aspx.designer.vb">
+      <DependentUpon>Design_Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Design_Course.aspx.vb">
+      <DependentUpon>Design_Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designer\EditMyCourseList.aspx.designer.vb">
+      <DependentUpon>EditMyCourseList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\EditMyCourseList.aspx.vb">
+      <DependentUpon>EditMyCourseList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Exam.aspx.designer.vb">
+      <DependentUpon>Exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Exam.aspx.vb">
+      <DependentUpon>Exam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\MyProgress.aspx.designer.vb">
+      <DependentUpon>MyProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\MyProgress.aspx.vb">
+      <DependentUpon>MyProgress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\MyProgress2.aspx.designer.vb">
+      <DependentUpon>MyProgress2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\MyProgress2.aspx.vb">
+      <DependentUpon>MyProgress2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Phases.aspx.designer.vb">
+      <DependentUpon>Phases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Phases.aspx.vb">
+      <DependentUpon>Phases.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\ProctorExam\FinSettings.aspx.designer.vb">
+      <DependentUpon>FinSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\ProctorExam\FinSettings.aspx.vb">
+      <DependentUpon>FinSettings.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\ProctorExam\MidSettings.aspx.designer.vb">
+      <DependentUpon>MidSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\ProctorExam\MidSettings.aspx.vb">
+      <DependentUpon>MidSettings.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\ProctorExam\ProctoredExams.aspx.designer.vb">
+      <DependentUpon>ProctoredExams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\ProctorExam\ProctoredExams.aspx.vb">
+      <DependentUpon>ProctoredExams.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\ProctorExam\VerifyExams.aspx.designer.vb">
+      <DependentUpon>VerifyExams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\ProctorExam\VerifyExams.aspx.vb">
+      <DependentUpon>VerifyExams.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Release.aspx.designer.vb">
+      <DependentUpon>Release.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Release.aspx.vb">
+      <DependentUpon>Release.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Reports\Bookstore.aspx.designer.vb">
+      <DependentUpon>Bookstore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Reports\Bookstore.aspx.vb">
+      <DependentUpon>Bookstore.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\ReviewAudit.aspx.designer.vb">
+      <DependentUpon>ReviewAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\ReviewAudit.aspx.vb">
+      <DependentUpon>ReviewAudit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Statistics.aspx.designer.vb">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Statistics.aspx.vb">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Sweep.aspx.designer.vb">
+      <DependentUpon>Sweep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Sweep.aspx.vb">
+      <DependentUpon>Sweep.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\SweepReviewForm.aspx.designer.vb">
+      <DependentUpon>SweepReviewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\SweepReviewForm.aspx.vb">
+      <DependentUpon>SweepReviewForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Sweep\Sweep1.aspx.designer.vb">
+      <DependentUpon>Sweep1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Sweep\Sweep1.aspx.vb">
+      <DependentUpon>Sweep1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Sweep\Sweep2.aspx.designer.vb">
+      <DependentUpon>Sweep2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Sweep\Sweep2.aspx.vb">
+      <DependentUpon>Sweep2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Tasks\AllTasks.aspx.designer.vb">
+      <DependentUpon>AllTasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Tasks\AllTasks.aspx.vb">
+      <DependentUpon>AllTasks.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Tasks\MyTaskProgress.aspx.designer.vb">
+      <DependentUpon>MyTaskProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Tasks\MyTaskProgress.aspx.vb">
+      <DependentUpon>MyTaskProgress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Tasks\MyTasks.aspx.designer.vb">
+      <DependentUpon>MyTasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Tasks\MyTasks.aspx.vb">
+      <DependentUpon>MyTasks.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Tasks\NewTask.aspx.designer.vb">
+      <DependentUpon>NewTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Tasks\NewTask.aspx.vb">
+      <DependentUpon>NewTask.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Designer\Textbook.aspx.designer.vb">
+      <DependentUpon>Textbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Textbook.aspx.vb">
+      <DependentUpon>Textbook.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DesignModule.vb" />
+    <Compile Include="Developer\Developer.aspx.designer.vb">
+      <DependentUpon>Developer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Developer\Developer.aspx.vb">
+      <DependentUpon>Developer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Helpdesk\Helpdesk.aspx.designer.vb">
+      <DependentUpon>Helpdesk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpdesk\Helpdesk.aspx.vb">
+      <DependentUpon>Helpdesk.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="myTimeOut.aspx.designer.vb">
+      <DependentUpon>myTimeOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myTimeOut.aspx.vb">
+      <DependentUpon>myTimeOut.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Page1.aspx.designer.vb">
+      <DependentUpon>Page1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page1.aspx.vb">
+      <DependentUpon>Page1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Page2.aspx.designer.vb">
+      <DependentUpon>Page2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page2.aspx.vb">
+      <DependentUpon>Page2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\BBpopup.aspx.designer.vb">
+      <DependentUpon>BBpopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BBpopup.aspx.vb">
+      <DependentUpon>BBpopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ExamReport.aspx.designer.vb">
+      <DependentUpon>ExamReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ExamReport.aspx.vb">
+      <DependentUpon>ExamReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\MasterAuditReport.aspx.designer.vb">
+      <DependentUpon>MasterAuditReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MasterAuditReport.aspx.vb">
+      <DependentUpon>MasterAuditReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\_PhasePopup.aspx.designer.vb">
+      <DependentUpon>_PhasePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\_PhasePopup.aspx.vb">
+      <DependentUpon>_PhasePopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\PhaseReport.aspx.designer.vb">
+      <DependentUpon>PhaseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PhaseReport.aspx.vb">
+      <DependentUpon>PhaseReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\popup.aspx.designer.vb">
+      <DependentUpon>popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\popup.aspx.vb">
+      <DependentUpon>popup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ProgressReport.aspx.designer.vb">
+      <DependentUpon>ProgressReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProgressReport.aspx.vb">
+      <DependentUpon>ProgressReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\AuditReport.aspx.designer.vb">
+      <DependentUpon>AuditReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\AuditReport.aspx.vb">
+      <DependentUpon>AuditReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\MasterCatalog.aspx.designer.vb">
+      <DependentUpon>MasterCatalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\MasterCatalog.aspx.vb">
+      <DependentUpon>MasterCatalog.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\MasterPhases.aspx.designer.vb">
+      <DependentUpon>MasterPhases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\MasterPhases.aspx.vb">
+      <DependentUpon>MasterPhases.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\pages\CourseGraph.aspx.designer.vb">
+      <DependentUpon>CourseGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\pages\CourseGraph.aspx.vb">
+      <DependentUpon>CourseGraph.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\pages\ProgressData.aspx.designer.vb">
+      <DependentUpon>ProgressData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\pages\ProgressData.aspx.vb">
+      <DependentUpon>ProgressData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\pages\ProgressGraphic.aspx.designer.vb">
+      <DependentUpon>ProgressGraphic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\pages\ProgressGraphic.aspx.vb">
+      <DependentUpon>ProgressGraphic.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\PhaseHistory.aspx.designer.vb">
+      <DependentUpon>PhaseHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\PhaseHistory.aspx.vb">
+      <DependentUpon>PhaseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\ProgressReport.aspx.designer.vb">
+      <DependentUpon>ProgressReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\ProgressReport.aspx.vb">
+      <DependentUpon>ProgressReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\Supervisor.aspx.designer.vb">
+      <DependentUpon>Supervisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor\Supervisor.aspx.vb">
+      <DependentUpon>Supervisor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\9-Problems.txt" />
+    <Content Include="Administrator\addAudts.aspx" />
+    <Content Include="Administrator\addAuditStatus.aspx" />
+    <Content Include="Administrator\AdminUsers.aspx" />
+    <Content Include="Administrator\Admin\AllCourseProgress.aspx" />
+    <Content Include="Administrator\Admin\AllStaff.aspx" />
+    <Content Include="Administrator\Admin\AuditDelete.aspx" />
+    <Content Include="Administrator\Admin\Default.aspx" />
+    <Content Include="Administrator\Admin\DeleteAudit.aspx" />
+    <Content Include="Administrator\Admin\ManageCatalog.aspx" />
+    <Content Include="Administrator\Admin\UploadProctorUdata.aspx" />
+    <Content Include="Administrator\Data\2195MasterExamDates.txt" />
+    <Content Include="Administrator\Data\PilotUploadOK.txt" />
+    <Content Include="Administrator\Development\BBlockReport.aspx" />
+    <Content Include="Administrator\Development\DivTest.aspx" />
+    <Content Include="Administrator\Development\GETbb.aspx" />
+    <Content Include="Administrator\Development\iFrame.aspx" />
+    <Content Include="Administrator\Development\SideSide.aspx" />
+    <Content Include="Administrator\Development\Update panel.aspx" />
+    <Content Include="Administrator\Development\WebForm2.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditForm\AsProctoredExam.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditForm\Debugme.html" />
+    <Content Include="Associate\AsAudit\ASAuditSession.aspx" />
+    <Content Include="Associate\AsAudit\AsDualAudit.aspx" />
+    <Content Include="Designer\ReleaseAudit.aspx" />
+    <Content Include="Designer\Reports\bookReport.aspx" />
+    <Content Include="Designer\NewCourseWizard.aspx" />
+    <Content Include="Administrator\Development\showmac.aspx" />
+    <Content Include="Administrator\MDC_Catalog.aspx" />
+    <Content Include="Administrator\StartNewTerm\SQLscripts.txt" />
+    <Content Include="Administrator\StartNewTerm\UpdateOL_MasterExam_temp4pilots.aspx" />
+    <Content Include="Administrator\UPDate_OL_Catalog.aspx" />
+    <Content Include="Administrator\UploadChildCourses.aspx" />
+    <Content Include="Administrator\UploadOL_BBlockObjs.aspx" />
+    <Content Include="Administrator\StartNewTerm\_AddMasterProctor.aspx" />
+    <Content Include="Administrator\AddNew_OL_MasterCourse.aspx" />
+    <Content Include="Administrator\AddSweep.aspx" />
+    <Content Include="Administrator\AddToCatalog.aspx" />
+    <Content Include="Administrator\Add_MasterPhaseData.aspx" />
+    <Content Include="Administrator\Administrator.aspx" />
+    <Content Include="Administrator\Admin\AddAllStaff.aspx" />
+    <Content Include="Administrator\Admin\false.png" />
+    <Content Include="Administrator\Admin\getSIS.aspx" />
+    <Content Include="Administrator\Admin\NewMasterShells.aspx" />
+    <Content Include="Administrator\Admin\ProctorReport.aspx" />
+    <Content Include="Administrator\Admin\SeeAllSessionVars.aspx" />
+    <Content Include="Administrator\Admin\Top20.aspx" />
+    <Content Include="Administrator\Admin\Top20Progress.aspx" />
+    <Content Include="Administrator\Admin\true.png" />
+    <Content Include="Administrator\AuditSweepData.txt" />
+    <Content Include="Administrator\BBMasterShells.txt" />
+    <Content Include="Administrator\CheckboxList.aspx" />
+    <Content Include="Administrator\CreateMasterCourseByTerm.aspx" />
+    <Content Include="Administrator\CreateOOL_Catalog.aspx" />
+    <Content Include="Administrator\CreateUsers.aspx" />
+    <Content Include="Administrator\Data\FinalDataX.txt" />
+    <Content Include="Administrator\default.aspx" />
+    <Content Include="Administrator\getDistinct.aspx" />
+    <Content Include="Administrator\MODtextbooks.aspx" />
+    <Content Include="Administrator\NewTextbooks.aspx" />
+    <Content Include="Administrator\StartNewTerm\AddProgressData.aspx" />
+    <Content Include="Administrator\StartNewTerm\examreport.aspx" />
+    <Content Include="Administrator\StartNewTerm\_ImportNextTermCourses.aspx" />
+    <Content Include="Administrator\StripHTML.aspx" />
+    <Content Include="Administrator\Sweep.txt" />
+    <Content Include="Administrator\test.aspx" />
+    <Content Include="Administrator\TextFile1.txt" />
+    <Content Include="Administrator\UpdateOLMaster.aspx" />
+    <Content Include="Administrator\UpdatePhaseHistory.aspx" />
+    <Content Include="Administrator\UploadBBMasterShells.aspx" />
+    <Content Include="Administrator\UploadFiaalExamData.aspx" />
+    <Content Include="Administrator\UploadMidExamData.aspx" />
+    <Content Include="Administrator\WebForm1.aspx" />
+    <Content Include="App_Data\RadCaptcha\0.wav" />
+    <Content Include="App_Data\RadCaptcha\1.wav" />
+    <Content Include="App_Data\RadCaptcha\2.wav" />
+    <Content Include="App_Data\RadCaptcha\3.wav" />
+    <Content Include="App_Data\RadCaptcha\4.wav" />
+    <Content Include="App_Data\RadCaptcha\5.wav" />
+    <Content Include="App_Data\RadCaptcha\6.wav" />
+    <Content Include="App_Data\RadCaptcha\7.wav" />
+    <Content Include="App_Data\RadCaptcha\8.wav" />
+    <Content Include="App_Data\RadCaptcha\9.wav" />
+    <Content Include="App_Data\RadCaptcha\A.wav" />
+    <Content Include="App_Data\RadCaptcha\B.wav" />
+    <Content Include="App_Data\RadCaptcha\C.wav" />
+    <Content Include="App_Data\RadCaptcha\D.wav" />
+    <Content Include="App_Data\RadCaptcha\E.wav" />
+    <Content Include="App_Data\RadCaptcha\F.wav" />
+    <Content Include="App_Data\RadCaptcha\G.wav" />
+    <Content Include="App_Data\RadCaptcha\H.wav" />
+    <Content Include="App_Data\RadCaptcha\I.wav" />
+    <Content Include="App_Data\RadCaptcha\J.wav" />
+    <Content Include="App_Data\RadCaptcha\K.wav" />
+    <Content Include="App_Data\RadCaptcha\L.wav" />
+    <Content Include="App_Data\RadCaptcha\M.wav" />
+    <Content Include="App_Data\RadCaptcha\N.wav" />
+    <Content Include="App_Data\RadCaptcha\O.wav" />
+    <Content Include="App_Data\RadCaptcha\P.wav" />
+    <Content Include="App_Data\RadCaptcha\Q.wav" />
+    <Content Include="App_Data\RadCaptcha\R.wav" />
+    <Content Include="App_Data\RadCaptcha\S.wav" />
+    <Content Include="App_Data\RadCaptcha\T.wav" />
+    <Content Include="App_Data\RadCaptcha\U.wav" />
+    <Content Include="App_Data\RadCaptcha\V.wav" />
+    <Content Include="App_Data\RadCaptcha\W.wav" />
+    <Content Include="App_Data\RadCaptcha\X.wav" />
+    <Content Include="App_Data\RadCaptcha\Y.wav" />
+    <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="App_Data\RadSpell\de-DE.tdf" />
+    <Content Include="App_Data\RadSpell\en-US.tdf" />
+    <Content Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="Administrator\Audits.csv" />
+    <Content Include="Administrator\2185dates.csv" />
+    <Content Include="Administrator\addsweeps.csv" />
+    <Content Include="Administrator\Admin\AllStaff.csv" />
+    <Content Include="Administrator\2187Dates.csv" />
+    <Content Include="Administrator\2187NewMasterCourses.csv" />
+    <Content Include="Administrator\NewOL_MasterCourse_2187.csv" />
+    <Content Include="Administrator\New_MasterPhase.csv" />
+    <Content Include="Administrator\Data\MidTermData.csv" />
+    <Content Include="Administrator\Data\2187MasterExamDates.csv" />
+    <Content Include="Administrator\Data\2193MasterExamDates.csv" />
+    <Content Include="Administrator\Data\NewCatalog.csv" />
+    <Content Include="Administrator\Data\NewOL_MasterCourse.csv" />
+    <Content Include="Administrator\Data\COURSE_CATALOG_CS.csv" />
+    <Content Include="Administrator\Data\McgrawObjects.csv" />
+    <Content Include="Administrator\Data\BBobjects.csv" />
+    <Content Include="Administrator\Data\2183ParentChild.csv" />
+    <Content Include="Administrator\Data\2187ParentChild.csv" />
+    <Content Include="Administrator\Data\ProctorU.csv" />
+    <Content Include="Designer\Reports\Bookstore.aspx" />
+    <Content Include="myTimeOut.aspx" />
+    <Content Include="Pages\Page2.aspx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Associate\AsAudit\AsAuditForm\AsCourse.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditForm\AsManagement.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditForm\AsMenu.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditForm\AsModules.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditForm\AsStatus.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditForm\AuditNotes.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditForm\Debug.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditForm\HELP\HelpIcon.png" />
+    <Content Include="Associate\AsAudit\AsAuditForm\HELP\popup.aspx" />
+    <Content Include="Associate\AsAudit\AsAuditProgress.aspx" />
+    <Content Include="Associate\Associate.aspx" />
+    <Content Include="Associate\Tasks\AllTaskList.aspx" />
+    <Content Include="Associate\Tasks\CompleteTask.aspx" />
+    <Content Include="Associate\Tasks\MyTasks.aspx" />
+    <Content Include="Associate\Tasks\PreviewTask.aspx" />
+    <Content Include="Associate\Tasks\SelectTask.aspx" />
+    <Content Include="Authenticate.aspx" />
+    <Content Include="bin\Telerik.Web.Spreadsheet.xml" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll" />
+    <Content Include="bin\Telerik.Web.UI.xml" />
+    <Content Include="Copy\CopyDashboard.aspx" />
+    <Content Include="debug.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="Delivery\Delivery.aspx" />
+    <Content Include="Designer\AddTextbook.aspx" />
+    <Content Include="Designer\AuditReview.aspx" />
+    <Content Include="Designer\Audit\_Audit.aspx" />
+    <Content Include="Designer\Audit\_Audit1.aspx" />
+    <Content Include="Designer\Audit\AuditForm\Course.aspx" />
+    <Content Include="Designer\Audit\AuditForm\Management.aspx" />
+    <Content Include="Designer\Audit\AuditForm\Menu.aspx" />
+    <Content Include="Designer\Audit\AuditForm\Modules.aspx" />
+    <Content Include="Designer\Audit\AuditForm\Status.aspx" />
+    <Content Include="Designer\Audit\AuditProgress.aspx" />
+    <Content Include="Designer\Audit\CreateAudit.aspx" />
+    <Content Include="Designer\Audit\ReassignAuditor.aspx" />
+    <Content Include="Designer\BuildingBlocks.aspx" />
+    <Content Include="Designer\BuildingBlocks\BuildingBlockDetails.aspx" />
+    <Content Include="Designer\BuildingBlocks\BuildingBlockReport.aspx" />
+    <Content Include="Designer\CopyPages\CopyProgress.aspx" />
+    <Content Include="Designer\CopyPages\ReleaseForm.aspx" />
+    <Content Include="Designer\CopyQA.aspx" />
+    <Content Include="Designer\Designer.aspx" />
+    <Content Include="Designer\Design_Course.aspx" />
+    <Content Include="Designer\EditMyCourseList.aspx" />
+    <Content Include="Designer\Exam.aspx" />
+    <Content Include="Designer\false.png" />
+    <Content Include="Designer\MyProgress.aspx" />
+    <Content Include="Designer\MyProgress2.aspx" />
+    <Content Include="Designer\Phases.aspx" />
+    <Content Include="Designer\ProctorExam\FinSettings.aspx" />
+    <Content Include="Designer\ProctorExam\MidSettings.aspx" />
+    <Content Include="Designer\ProctorExam\ProctoredExams.aspx" />
+    <Content Include="Designer\ProctorExam\VerifyExams.aspx" />
+    <Content Include="Designer\Release.aspx" />
+    <Content Include="Designer\ReviewAudit.aspx" />
+    <Content Include="Designer\Statistics.aspx" />
+    <Content Include="Designer\Sweep.aspx" />
+    <Content Include="Designer\SweepReviewForm.aspx" />
+    <Content Include="Designer\Sweep\Sweep1.aspx" />
+    <Content Include="Designer\Sweep\Sweep2.aspx" />
+    <Content Include="Designer\Tasks\AllTasks.aspx" />
+    <Content Include="Designer\Tasks\MyTaskProgress.aspx" />
+    <Content Include="Designer\Tasks\MyTasks.aspx" />
+    <Content Include="Designer\Tasks\NewTask.aspx" />
+    <Content Include="Designer\Textbook.aspx" />
+    <Content Include="Designer\true.png" />
+    <Content Include="Developer\Developer.aspx" />
+    <Content Include="Helpdesk\Helpdesk.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\false.png" />
+    <Content Include="images\key.jpg" />
+    <Content Include="images\true.png" />
+    <Content Include="images\Up.png" />
+    <Content Include="index.aspx" />
+    <Content Include="menuheader1.png" />
+    <Content Include="Pages\Page1.aspx" />
+    <Content Include="Reports\BBpopup.aspx" />
+    <Content Include="Reports\default.aspx" />
+    <Content Include="Reports\ExamReport.aspx" />
+    <Content Include="Reports\index.aspx" />
+    <Content Include="Reports\MasterAuditReport.aspx" />
+    <Content Include="Reports\_PhasePopup.aspx" />
+    <Content Include="Reports\PhaseReport.aspx" />
+    <Content Include="Reports\popup.aspx" />
+    <Content Include="Reports\ProgressReport.aspx" />
+    <Content Include="SiteImages\menuheader.png" />
+    <Content Include="Supervisor\AuditReport.aspx" />
+    <Content Include="Supervisor\Images\false.png" />
+    <Content Include="Supervisor\Images\true.png" />
+    <Content Include="Supervisor\MasterCatalog.aspx" />
+    <Content Include="Supervisor\MasterPhases.aspx" />
+    <Content Include="Supervisor\pages\CourseGraph.aspx" />
+    <Content Include="Supervisor\pages\ProgressData.aspx" />
+    <Content Include="Supervisor\pages\ProgressGraphic.aspx" />
+    <Content Include="Supervisor\PhaseHistory.aspx" />
+    <Content Include="Supervisor\ProgressReport.aspx" />
+    <Content Include="Supervisor\Supervisor.aspx" />
+    <Content Include="Timeout\Locations.txt" />
+    <Content Include="Timeout\scripts.js" />
+    <Content Include="Timeout\styles.css" />
+    <Content Include="Timeout\tada.wav" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site1.Master" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Administrator\NewFolder1\" />
+    <Folder Include="Designer\Release\" />
+    <Folder Include="Files\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49646</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49646/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

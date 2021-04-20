@@ -1,0 +1,74 @@
+﻿OL_Textbooks
+...Backup the OL_Textbooks table.........................................................................................................
+use VC_VCData1
+DROP TABLE OL_Textbooks_BU;
+
+..... Make a BU of OL_Textbooks..............
+use VC_VCData1
+Select *
+into dbo.OL_Textbooks_BU
+from dbo.OL_Textbooks;
+
+.....Drop the Temp working table......................
+use VC_VCData1
+DROP TABLE OL_TextbooksTemp;
+
+..........Copy 2213 records to Temp..............
+use VC_VCData1
+Select *
+into dbo.OL_TextbooksTemp
+from dbo.OL_Textbooks
+where Term='2213';
+
+.......Update the Term------------------------
+use VC_VCData1
+UPDATE dbo.OL_TextbooksTemp
+Set Term='2215'
+
+..........NOTE misnaming convention  here it is mastercourse not mastername,,,,,,,,,,,,,
+
+use VC_VCData1
+UPDATE dbo.OL_TextbooksTemp
+SET    MasterCourse = replace(MasterCourse, '2213_', '2215_')
+
+........Drop the ID field from OL_TextbooksTemp--------------------------------
+use VC_VCData1
+ALTER TABLE dbo.OL_TextbooksTemp
+DROP COLUMN ID; 
+
+
+,,,,,,,,Finally copy updated 2205 records into the OL_MasterCourse table.........
+use VC_VCData1
+INSERT INTO dbo.OL_Textbooks
+SELECT * FROM dbo.OL_TextbooksTemp
+
+////////////////////////////////////////////////////////////////////All in One Query
+
+use VC_VCData1
+
+DROP TABLE OL_Textbooks_BU;
+DROP TABLE OL_TextbooksTemp;
+
+Select *
+into dbo.OL_Textbooks_BU
+from dbo.OL_Textbooks;
+
+Select *
+into dbo.OL_TextbooksTemp
+from dbo.OL_Textbooks
+where Term='2213';
+
+UPDATE dbo.OL_TextbooksTemp
+Set Term='2215';
+
+UPDATE dbo.OL_TextbooksTemp
+SET    MasterCourse = replace(MasterCourse, '2213_', '2215_');
+
+ALTER TABLE dbo.OL_TextbooksTemp
+DROP COLUMN ID; 
+
+//////to avoid dopy permission errors, run this lask query alone
+
+use VC_VCData1
+INSERT INTO dbo.OL_Textbooks
+SELECT * FROM dbo.OL_TextbooksTemp;

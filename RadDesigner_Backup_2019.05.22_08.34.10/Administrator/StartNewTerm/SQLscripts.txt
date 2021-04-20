@@ -1,0 +1,75 @@
+﻿
+//at start of new term, these tables must be updated: OL_MasterCourse, OL_Textbooks, OL_MasterExams,OL_buildingBlocks
+//use the templates below to create the sql scripts
+// the process is  
+     Backup the OL master tables
+     Create a new table with the records for the past term table_BU
+     Modify the data for the new term  table_temp
+     Add the updated data to the master table
+ALSO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+In RADdesigner project
+run file AddProgressData
+in Administrator>>StartNewTerm>>AddProgressData.aspx
+this creats new records for progress (change term in code) with all records set to 0
+................................................................................................................................
+Set pilots to active for past term
+update [VC_VCData1].[dbo].[OL_MasterCourse]
+set status='Active'
+  where term = '2193'
+  and Status = 'Pilot'
+  NEW COURSES>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   in the NewCourse folder use the Step1 and Step2 files to add new catalog entriesand course records.
+      You can create either single or multiple records in each file.
+	   this creates records for the OL_MasterCourse, OL_MasterExam, and OL_Progress tables
+	   New textbooks can be created by the designer in the Designer/AddTextbooks.aspx
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+If OL_MasterCourse_BU exists, drop the table so it can be recreated in the next step
+
+
+create a backup of entire OL_MasterCourse
+""""""""""""""""""""""""""""""""""""""""""""
+use VC_VCData1
+
+Select *
+into dbo.OL_MasterCourse_BU
+from dbo.OL_MasterCourse
+
+
+Then create a temp copy of OL_MasterCourse
+'''''''''''''''''''''''''''''''''''''''''''
+(If temp table exists, Either drop the table or delete old temp data)
+(Only put the past term data into the temp tabel)
+
+use VC_VCData1
+
+Select *
+into dbo.temp_Masters2
+from dbo.OL_MasterCourse
+where Term=2187
+
+Update the temp table for the new term
+'''''''''''''''''''''''''''''''''''''''''
+use VC_VCData1
+UPDATE dbo.temp_Masters2
+SET    MasterName = replace(MasterName, '2187_', '2193_')
+
+use VC_VCData1
+UPDATE dbo.temp_Masters2
+SET    ThisMasterSource = replace(ThisMasterSource, '2185_', '2187_')
+
+use VC_VCData1
+UPDATE dbo.temp_Masters2
+Set Term=2193
+
+Drop the Master_ID column so the records can be copied
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+use VC_VCData1
+ALTER TABLE dbo.temp_Masters2
+DROP COLUMN Master_ID; 
+
+Finally copy the temp records back to the OL_MasterCourse table
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+use VC_VCData1
+INSERT INTO dbo.OL_MasterCourse
+SELECT * FROM dbo.temp_Masters2

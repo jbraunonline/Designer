@@ -1,0 +1,50 @@
+
+If OL_MasterCourse_BU exists, drop the table so it can be recreated in the next step
+
+
+create a backup of entire OL_MasterCourse
+""""""""""""""""""""""""""""""""""""""""""""
+use VC_VCData1
+
+Select *
+into dbo.OL_MasterCourse_BU
+from dbo.OL_MasterCourse
+
+
+Then create a temp copy of OL_MasterCourse
+'''''''''''''''''''''''''''''''''''''''''''
+(If temp table exists, Either drop the table or delete old temp data)
+(Only put the past term data into the temp tabel)
+
+use VC_VCData1
+
+Select *
+into dbo.temp_Masters2
+from dbo.OL_MasterCourse
+where Term=2187
+
+Update the temp table for the new term
+'''''''''''''''''''''''''''''''''''''''''
+use VC_VCData1
+UPDATE dbo.temp_Masters2
+SET    MasterName = replace(MasterName, '2187_', '2193_')
+
+use VC_VCData1
+UPDATE dbo.temp_Masters2
+SET    ThisMasterSource = replace(ThisMasterSource, '2185_', '2187_')
+
+use VC_VCData1
+UPDATE dbo.temp_Masters2
+Set Term=2193
+
+Drop the Master_ID column so the records can be copied
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+use VC_VCData1
+ALTER TABLE dbo.temp_Masters2
+DROP COLUMN Master_ID; 
+
+Finally copy the temp records back to the OL_MasterCourse table
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+use VC_VCData1
+INSERT INTO dbo.OL_MasterCourse
+SELECT * FROM dbo.temp_Masters2

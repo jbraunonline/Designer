@@ -1,0 +1,37 @@
+﻿You can review the logic for setting up the next term in the 220.txt file.
+//at start of new term, these tables must be updated: OL_MasterCourse, OL_Textbooks, OL_MasterExams,OL_buildingBlocks, OL_Progress
+    We need to add the data to these tables for the next term master coursesl
+//I have created the sql scripts (for the 2215 term) in the folder 2215StartupScripts.txt  
+    I'd suggest creating a new folder and set of files for each term and run them seperately to have a record of what has been modified in the db.
+These could be simplified by ganging the sql commands together into one long command, but I prefer to run each script  for each table manually.
+   this forces me to think through the entire process in case there is an error.
+
+   The basic process is:
+   1.  Backup the table
+   2. Create a temp table getting only the data for the past term.
+   3. Modify the data in the temp table to refelct the new term parameters/names
+   6. Delete the ID column from the temp table
+   5. Copy the temp table (with the new records) into original table to add records for the upcoming terrn.
+      Rinse and repeat for each of the tables.
+
+   Admins no longer add new courses to the DB or change the status of a course from pilot to active. (Desigers do that)
+   New courses are to be added by the designers from the New course Wizard
+   ~Designer/NewCourseWizard.aspx   The designer link is found in the desiger app on the Designer EditMyCourses tab.   ~Designer/EditMyCourses.aspx
+
+   To handle Designer assignments, I run the ~Administrator/Admin/ChangeDeveloperOne.aspx file after preparing a CSV from Dr. Burt that associates all courses with the new designer assignments.
+ 
+  You can change one course at t time or upload the data to  ~ Administrator,Admin/Data/DesignerChange.csv
+        2205_EAP1600_MC_VC,EAP1600,A Alphonse-Prescott,124
+        2205_EAP1600L_MC_VC,EAP1600L,A Alphonse-Prescott,124
+		 etc.
+
+********************************* BEFORE RELEASING TO DESIGNERS**************************************************
+		 You MUST update the DesignModule.vb file in the root directory
+		 This is the master class file for the application that returns the correct name and definitions for the running app.
+		 ThisTerm, NextTerm, NewMasterterm are defined here and shared throughtout the application
+
+		 NOTE on adding the proctored exam dates to the OL_MasterProctor table
+		 Generally, I get the exam dates for the next term AFTER the Designer app is set up for the designers.
+		 Dr Burt sends a list of courses and exam dates as a spreadsheet  This is saved to a csv. to the Data folder in this directory
+		 Then use the Add_OL_Masterproctor.aspx to add the dates
+
